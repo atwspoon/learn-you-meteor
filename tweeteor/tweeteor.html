@@ -1,0 +1,45 @@
+<head>
+  <title>Tweeteor</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Tweeteor</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <form class="col-xs-12 new-tweet">
+        <div class="form-group">
+          <input type="text" name="text" class="form-control"
+            placeholder="What cool thing do you have to say?">
+        </div>
+        <hr>
+      </form>
+    </div>
+  </div>
+
+  <div class="container tweets">
+    {{#each tweets}}
+      {{> tweet}}
+    {{/each}}
+  </div>
+</body>
+
+<template name="tweet">
+  <div class="row tweet">
+    <div class="col-xs-12">
+      <p class="lead">
+        <span class="pull-right delete-tweet">&times;</span>
+      </p>
+      <p class="text lead">{{ text }}</p>
+      <p class="time small">Posted: {{ time }}</p>
+      <hr>
+    </div>
+  </div>
+</template>
