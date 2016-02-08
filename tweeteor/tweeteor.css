@@ -1,3 +1,5 @@
 /* CSS declarations go here */
 
 .delete-tweet { cursor: pointer; }
+
+#login-buttons { margin-top: 18px; }

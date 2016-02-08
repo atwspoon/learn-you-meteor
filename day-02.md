@@ -229,7 +229,7 @@ our CSS file:
 .delete-tweet { cursor: pointer; }
 ```
 
-BOOM! Now we can delete tweets!
+Now we can delete tweets!
 
 
 ## Today we covered:
@@ -239,6 +239,14 @@ BOOM! Now we can delete tweets!
 * Using template events
 * Deleting items from Mongo
 
+
+# Exercises
+
+1. Prevent tweets from being created if the content is empty.
+2. Add flash message capabilities.
+  1. Display message for tweet deletion
+  2. Display error for attempt to tweet without content
+  3. Display success message when creating a tweet
 
 
 [mongodb]: https://www.mongodb.com/

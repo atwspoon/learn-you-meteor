@@ -204,7 +204,7 @@ is expecting the name to match.
   <div class="row tweet">
     <div class="col-xs-12">
       <p class="text lead">{{ text }}</p>
-      <p class="time small">Posted: {{ createdAt }}</p>
+      <p class="small">Posted: {{ createdAt }}</p>
       <hr>
     </div>
   </div>
@@ -274,11 +274,19 @@ few seconds ago".
 * Meteor packages
 
 
+# Exercise!
 
+Right now we are pulling in bootstrap with a `link` tag in our HTML. However, we
+could also use the awesome meteor package library to pull it in and make our
+lives even easier.
 
+Your exercise is to remove the current bootstrap CSS and then pull in bootstrap
+using the meteor package manager. If you have trouble finding it, search on
+[atmospherejs.com](atmosphere), the meteor package site.
 
 
 [meteor-windows-installer]: https://install.meteor.com/windows
 [handlebars]: http://handlebarsjs.com/
 [spacebars]: https://github.com/meteor/meteor/blob/devel/packages/spacebars/README.md
 [momentjs]: http://momentjs.com/
+[atmosphere]: http;//atmospherejs.com
