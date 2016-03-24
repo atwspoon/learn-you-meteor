@@ -195,9 +195,7 @@ is. Thankfully, with template events, it's very easy to get that.
 First, let's add the markup we need for a "delete" button on a tweet.
 
 ```
-<p class="lead">
-  <span class="pull-right delete-tweet">&times;</span>
-</p>
+<button type="button" class="close">&times;</button>
 ```
 
 This will go in the `tweet` template right under the opening line for our
