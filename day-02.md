@@ -195,9 +195,7 @@ is. Thankfully, with template events, it's very easy to get that.
 First, let's add the markup we need for a "delete" button on a tweet.
 
 ```
-<p class="lead">
-  <span class="pull-right delete-tweet">&times;</span>
-</p>
+<button type="button" class="delete-tweet close">&times;</button>
 ```
 
 This will go in the `tweet` template right under the opening line for our
@@ -220,14 +218,6 @@ Notice the `this._id`. This is available to use because the template is used in
 a collection where we are looping through a group of tweets. The same magic that
 lets us access properties of the tweet in the HTML template using `{{ property
 }}` let's us access properties in the template events using `this.attribute`.
-
-One last thing -- let's make the interface a little better by changing the mouse
-to a "pointer" when we hover the `x`. Do this by adding the following line to
-our CSS file:
-
-```
-.delete-tweet { cursor: pointer; }
-```
 
 Now we can delete tweets!
 
