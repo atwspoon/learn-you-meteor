@@ -44,8 +44,11 @@ To create a new project will use the newly acquired Meteor CLI. The command to
 create a new project is:
 
 ```
-$ meteor create tweeteor
+$ meteor create --release 1.2.1 tweeteor
 ```
+
+With this command we are specifying to use version `1.2.1` of Meteor. A newer
+version `1.3` is available but for the purposes of this class we are using `1.2.1`.
 
 It will create a new folder in the directory you are currently in with the name
 of the project you provided. In there you will find 3 files:
