@@ -26,7 +26,7 @@ if (Meteor.isClient) {
     'submit .new-tweet': function(event) {
       event.preventDefault();
 
-      if (event.target.text.value = '') {
+      if (event.target.text.value === '') {
         return FlashMessages.sendWarning('Tweet must have content.');
       }
 
